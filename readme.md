@@ -1,4 +1,4 @@
-# NOWOCZESNE TECHNOLOGIE PRZETWARZANIA DANYCH - LAB06
+# NOWOCZESNE TECHNOLOGIE PRZETWARZANIA DANYCH
 
 Cel cwiczenia:  
 Celem cwiczenia jest nabycie praktycznych umiejetnosci w zakresie tworzenia i weryfikacji prostego projektu ML z wykorzystaniem testow jednostkowych oraz narzedzi wspierajacych CI/CD.
@@ -51,11 +51,3 @@ Szczegoly poprawnego uruchomienia testow w workflow:
 ## Zadanie 3: Automatyczne budowanie obrazu Dockera (opcjonalne)
 
 Repozytorium zawiera plik `Dockerfile` z poprzednich laboratoriow, ktory pozwala na zbudowanie obrazu Dockera z aplikacja. Workflow mozna rozszerzyc o dodatkowy job budujacy obraz i publikujacy go do GitHub Container Registry (`ghcr.io`) po pushu na galaz `main`.
-
----
-
-## Wersjonowanie
-
-| Wersja | Opis zmian |
-|---|---|
-| v1.0 | Pierwsza wersja z testami jednostkowymi i workflow CI |
