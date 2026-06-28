@@ -1,0 +1,25 @@
+services:
+  app:
+    build: .
+    container_name: lab04-app
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+    networks:
+      - ml-network
+
+  redis:
+    image: redis:7-alpine
+    container_name: lab04-app-wine
+    ports:
+      - "6379:6379"
+    networks:
+      - ml-network
+
+networks:
+  ml-network:
+    driver: bridge
